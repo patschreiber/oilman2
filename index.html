@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oilman 2</title>
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/hud.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/system/player.js"></script>
+  <script type="text/javascript" src="js/lib/react.js"></script>
+  <script type="text/javascript" src="js/lib/JSXTransformer.js"></script>
+
+</head>
+<body>
+  <div id="wrapper">
+    <script type="text/jsx">
+
+      var StatsPane = React.createClass({
+        render: function() {
+          return (
+            <div className="stats-pane">
+              <StatsList player={this.props.player} />
+            </div>
+          );
+        }
+      });
+
+      var StatsList = React.createClass({
+        render: function() {
+          var statNodes = this.props.player.map(function(stat) {
+            return (
+              <Stat data={stat} />
+            );
+          });
+          return (
+            <div className="stats">
+              {statNodes}
+            </div>
+          );
+        }
+      });
+
+      var Stat = React.createClass({
+        render: function() {
+          return (
+            <div className="stat">
+              <h4>{this.props.data.name}</h4>
+              {this.props.data.value}
+            </div>
+          );
+        }
+      });
+
+        console.log(Player);
+      React.render(
+        <StatsPane player={Player} />,
+        document.getElementById('wrapper')
+      );
+    </script>
+  </div>
+</body>
+</html>

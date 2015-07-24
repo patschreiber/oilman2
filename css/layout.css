@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    font-size: 14px;
+}
+html {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+#wrapper {
+  width: 976px;
+  margin: 0 auto;
+}
+.row:before,
+.row:after {
+  content:"";
+  display: table;
+  clear:both;
+}
