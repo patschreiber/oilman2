@@ -1,11 +1,7 @@
-.stats-pane {
+#stats-pane {
   border: 1px solid;
   border-color: rgb(0,0,0);
   width: 10em;
   text-align: center;
   float: right;
-}
-
-.stats-pane ul {
-  list-style-type: none;
 }
