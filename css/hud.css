@@ -1,7 +1,29 @@
+html {
+  color: rgb(40,45,53);
+  border-color: rgb(40,45,53);
+}
+a {
+  border: 1px solid;
+  border-color: rgb(40,45,53);
+  font-weight: bold;
+  color: rgb(40,45,53);
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(224,224,224);
+}
+.btn-sm {
+  padding: .25em .5em .25em .5em;
+}
+.btn-lg {
+  padding: .5em 1em .5em 1em;
+}
 #stats-pane {
   border: 1px solid;
-  border-color: rgb(0,0,0);
-  width: 10em;
   text-align: center;
   float: right;
+}
+.disabled {
+  color: rgb(224,224,224) !important;
+  border-color: rgb(224,224,224) !important;
 }
