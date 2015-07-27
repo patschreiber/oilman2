@@ -8,6 +8,7 @@ a {
   font-weight: bold;
   color: rgb(40,45,53);
   text-decoration: none;
+  text-transform: uppercase;
 }
 a:hover {
   background-color: rgb(224,224,224);
@@ -21,9 +22,17 @@ a:hover {
 #stats-pane {
   border: 1px solid;
   text-align: center;
-  float: right;
 }
 .disabled {
   color: rgb(224,224,224) !important;
   border-color: rgb(224,224,224) !important;
+}
+ul.date-pane {
+  list-style-type: none;
+}
+ul.date-pane li {
+  border: 1px solid;
+  display: inline;
+  margin-right: 1em;
+  padding: .5em 1em .5em 1em;
 }
