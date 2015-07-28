@@ -45,7 +45,6 @@ var Stat = React.createClass({
   }
 });
 
-setInterval(function() {Player[0].value++}, Settings.debugTickRate)
 React.render(
   <StatsPane stats={Player} ticker={Settings.eventTickRate} />,
   document.getElementById('stats-pane')

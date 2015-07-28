@@ -32,7 +32,7 @@ ul.date-pane {
 }
 ul.date-pane li {
   border: 1px solid;
-  display: inline;
+  display: inline-block;
   margin-right: 1em;
   padding: .5em 1em .5em 1em;
 }

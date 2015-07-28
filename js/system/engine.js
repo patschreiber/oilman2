@@ -1,16 +1,16 @@
+/**
+ *
+ * Event Scheduler that updates the json libraries used for game data
+ */
+
 +function() {
   var Engine = {
-    newGame: true,
-
-    listeners: {
-      eventListener: function() {
-
-      }
+    moneyTicker: function() {
+      setInterval(function() {Player[0].value++}, Settings.eventTickRate)
     },
 
     init: function() {
-      $('#player-money').text(Player.money);
-      $('#player-market-share').text(Player.marketShare)
+      this.moneyTicker();
     }
   }
 
