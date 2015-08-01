@@ -9,12 +9,12 @@ var StatsPane = React.createClass({
   },
 
   refreshStatsPane: function() {
-    this.setState({stats: {Player}})
+    this.setState({stats: Player.stats});
   },
 
   render: function() {
     return (
-      <StatsList stats={this.props.stats} />
+      <StatsList stats={this.state.stats} />
     );
   }
 });
@@ -46,6 +46,6 @@ var Stat = React.createClass({
 });
 
 React.render(
-  <StatsPane stats={Player} ticker={Settings.eventTickRate} />,
+  <StatsPane stats={Player.stats} ticker={Settings.eventTickRate} />,
   document.getElementById('stats-pane')
 );

@@ -31,8 +31,15 @@ ul.date-pane {
   list-style-type: none;
 }
 ul.date-pane li {
-  border: 1px solid;
   display: inline-block;
   margin-right: 1em;
   padding: .5em 1em .5em 1em;
+  text-align: center;
+}
+.year {
+  border: 1px solid;
+}
+.month {
+  border: 1px solid;
+  width: 3em;
 }
