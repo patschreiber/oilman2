@@ -5,8 +5,14 @@
 
 +function() {
   var Engine = {
+    calculateMoney: function() {
+      return Player.stats[0].value = Player.stats[0].value + (Player.income * Player.incomeMultiplier);
+    },
+
     moneyTicker: function() {
-      setInterval(function() {Player.stats[0].value++}, Settings.eventTickRate)
+      setInterval(function() {
+        Engine.calculateMoney();
+      }, Settings.eventTickRate)
     },
 
     calendarTicker: function() {

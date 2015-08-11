@@ -3,7 +3,7 @@ var StatsPane = React.createClass({
     return {stats: []};
   },
 
-  //Here, componentDidMount is a method called automatically by React when a component is rendered. http://facebook.github.io/react/docs/tutorial.html
+  //componentDidMount is a method called automatically by React when a component is rendered. http://facebook.github.io/react/docs/tutorial.html
   componentDidMount: function() {
     setInterval(this.refreshStatsPane, this.props.ticker);
   },
